@@ -46,7 +46,6 @@ void ReplaceNameVS2015(const std::string &folderName, const std::string &fileNam
 }
 
 
-
 int main()
 {
 	string dir;
@@ -67,27 +66,21 @@ int main()
 
 
 
-
-
-
-
-
-
 // 测试读取UTF-8的文档
-void ReadUtf8File()
-{
-	cout << "请输入utf8文件名：";
-	string filePath;
-	getline(cin, filePath);
-	
-	string fileContent;
-	readFile(filePath, fileContent);
-
-	CUtf8CharSet utf8Tool;
-	utf8Tool.Read(fileContent.c_str());
-	
-	wstring wsNative;
-	utf8Tool.WriteNative(wsNative);
-
-	cout << utf8Tool.ws2s(wsNative) << endl;
-}
+//void ReadUtf8File()
+//{
+//	cout << "请输入utf8文件名：";
+//	string filePath;
+//	getline(cin, filePath);
+//	
+//	string fileContent;
+//	readFile(filePath, fileContent);
+//
+//	CUtf8CharSet utf8Tool;
+//	utf8Tool.Read(fileContent.c_str());
+//	
+//	wstring wsNative;
+//	utf8Tool.WriteNative(wsNative);
+//
+//	cout << utf8Tool.ws2s(wsNative) << endl;
+//}
